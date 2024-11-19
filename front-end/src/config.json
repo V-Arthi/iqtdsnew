@@ -1,0 +1,32 @@
+{
+  "environments": ["SITA", "PPMO", "UAT", "PSUP", "PROD", "DEVA","DEVB"],
+  "endpoint": "http://localhost:8080/api/",
+  "prod-endpoint": "njsgehalmsa02qa:8000/iqtds-backend/api/",
+  "basename": "",
+  "prod-basename": "/iqtds",
+  "salt":"$2a$10$ZqnD7bUWK64MN6s2hPFome",
+  "operators": ["",
+    "=",
+    "!=",
+    "<",
+    "<=",
+    ">",
+    ">=",
+    "in",
+    "not in",
+    "like",
+    "not like",
+    "substr"
+  ],
+  "claim_input_types": ["", "EDI", "Online"],
+  "claim_types": ["", "Medical", "Hospital", "Dental"],
+  "screen_access": {
+    "execute": { "roles": ["administrator", "maintainer", "tester"] },
+    "design": { "roles": ["administrator", "maintainer", "tester"] },
+    "jobs": { "roles": ["administrator", "maintainer","tester"] },
+    "dashboard": {
+      "roles": ["administrator", "maintainer"]
+    },
+    "settings": { "roles": ["administrator", "maintainer"] }
+  }
+}

@@ -1,0 +1,57 @@
+.online_claim_creation{
+    margin-left:30px;
+    background-color: #fff;
+    padding:20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.claim_selection{
+    display: flex;
+    align-items: center;
+}
+
+.claim_selection .custom_field{
+    margin-right: 20px;
+}
+
+.claim_selection select{
+    border:1px solid #f2f2f2;
+}
+.execution-container__enviroment {
+    margin-right: 20px;
+    
+}
+
+.steps-container{
+    margin-top:30px;
+}
+
+.current__build__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:30px 10px;
+}
+
+.current__build__info .info_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_card>p{
+    margin:0;
+    padding:10px;
+}
+
+.info_card a{
+    padding:0;
+}
+
+.info_card>p:first-child{
+    min-width:200px;
+    text-transform: uppercase;
+}

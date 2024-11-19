@@ -1,0 +1,276 @@
+# This file contains the syntax information for 
+# the entries to be put in any tnsnames.ora file
+# The entries in this file are need based. 
+# There are no defaults for entries in this file
+# that Sqlnet/Net3 use that need to be overridden 
+#
+# Typically you could have two tnsnames.ora files
+# in the system, one that is set for the entire system
+# and is called the system tnsnames.ora file, and a
+# second file that is used by each user locally so that
+# he can override the definitions dictated by the system
+# tnsnames.ora file.
+
+# The entries in tnsnames.ora are an alternative to using
+# the names server with the onames adapter.
+# They are a collection of aliases for the addresses that 
+# the listener(s) is(are) listening for a database or 
+# several databases.
+
+# The following is the general syntax for any entry in 
+# a tnsnames.ora file. There could be several such entries 
+# tailored to the user's needs.
+
+<alias>= [ (DESCRIPTION_LIST =  # Optional depending on whether u have 
+				# one or more descriptions
+				# If there is just one description, unnecessary ]
+	  (DESCRIPTION=
+	    [ (SDU=2048) ]	# Optional, defaults to 2048
+				# Can take values between 512 and 32K
+	    [ (ADDRESS_LIST=    # Optional depending on whether u have
+				# one or more addresses
+				# If there is just one address, unnecessary ]
+	      (ADDRESS=
+		[ (COMMUNITY=<community_name>) ] 
+		(PROTOCOL=tcp)
+		(HOST=<hostname>)
+		(PORT=<portnumber (1521 is a standard port used)>)
+	      )
+	      [ (ADDRESS=
+		  (PROTOCOL=ipc)
+		  (KEY=<ipckey (PNPKEY is a standard key used)>)	
+		)
+	      ]
+	      [ (ADDRESS=
+		  [ (COMMUNITY=<community_name>) ]
+		  (PROTOCOL=decnet)
+		  (NODE=<nodename>)
+		  (OBJECT=<objectname>)
+		)
+	      ]
+              ... # More addresses
+	    [ ) ] # Optional depending on whether ADDRESS_LIST is used or not 
+	    [ (CONNECT_DATA=
+		(SID=<oracle_sid>)
+		[ (GLOBAL_NAME=<global_database_name>) ]
+	      )
+	    ]
+	    [ (SOURCE_ROUTE=yes) ]  
+	  )
+	  (DESCRIPTION=     
+	    [ (SDU=2048) ]	# Optional, defaults to 2048
+				# Can take values between 512 and 32K
+	    [ (ADDRESS_LIST= ]	# Optional depending on whether u have more
+				# than one address or not
+				# If there is just one address, unnecessary
+	      (ADDRESS
+		[ (COMMUNITY=<community_name>) ]
+		(PROTOCOL=tcp)
+		(HOST=<hostname>)
+		(PORT=<portnumber (1521 is a standard port used)>)
+	      )
+	      [ (ADDRESS=
+		  (PROTOCOL=ipc)
+		  (KEY=<ipckey (PNPKEY is a standard key used)>)
+	         )
+	      ]
+	      ... 		# More addresses
+	    [ ) ] 		# Optional depending on whether ADDRESS_LIST  
+				# is being used
+	    [ (CONNECT_DATA=
+		(SID=<oracle_sid>)
+		[ (GLOBAL_NAME=<global_database_name>) ]
+	      )
+	    ]
+	    [ (SOURCE_ROUTE=yes) ]
+	  )
+	  [ (CONNECT_DATA=
+	      (SID=<oracle_sid>)
+	      [ (GLOBAL_NAME=<global_database_name>) ]
+	    )
+	  ]
+	  ...   # More descriptions 
+	[ ) ]	# Optional depending on whether DESCRIPTION_LIST is used or not
+
+
+faembpr1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembpr1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+faembut1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembut1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+faembsib =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembsib)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+faembsia =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembsia)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+faembpp1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembpp1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+faembtr1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembtr1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+faembps1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = faembps1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+hgembpr1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembpr1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+hgembut1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembut1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+hgembsib =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembsib)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+hgembsia =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembsia)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+hgembpp1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembpp1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+  
+hgembtr1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembtr1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )
+
+hgembps1 =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCPS)(HOST = 107.191.241.211)(PORT = 10001))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = hgembps1)
+      (FAILOVER_MODE =
+        (TYPE = select)
+        (METHOD = basic)
+      )
+    )
+  )

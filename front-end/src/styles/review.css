@@ -1,0 +1,33 @@
+.review{
+    min-height: 100vh;
+    padding : 10px 30px;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.ant-progress{
+    max-width: 35%;
+    align-self: flex-end;
+    margin:20px 0px;
+    padding-top:5px;
+    padding-bottom:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.ant-progress-text{
+    width:auto !important;
+    color : #444 !important;
+}
+
+.ant-table-scroll-horizontal{
+    padding:10px;
+}
+
+.ant-table-tbody .ant-table-cell{
+    color:#555 !important;
+}

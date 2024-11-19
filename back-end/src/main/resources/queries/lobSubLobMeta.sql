@@ -1,0 +1,13 @@
+INSERT INTO `tbl_lob`(`lob`) VALUES ('CCI');
+INSERT INTO `tbl_lob`(`lob`) VALUES ('HMO');
+INSERT INTO `tbl_lob`(`lob`) VALUES ('PPO');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('ASO');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Medicare');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Medicaid');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Med Supp');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Commercial');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('CNY');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Non City');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('DSNP');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Special Groups');
+INSERT INTO `tbl_sub_lob`(`sub_lob`) VALUES ('Exchange');

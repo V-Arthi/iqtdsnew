@@ -1,0 +1,25 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px;
+    padding:0px;
+    flex:1;
+}
+
+.toolName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:20px;
+    color:#fff;
+}
+
+.toolName .tool-title{
+    font-size: 2ch;
+    font-weight: 400;
+}
+
+.logo-svg{
+    transform:translateX(-70%);
+}

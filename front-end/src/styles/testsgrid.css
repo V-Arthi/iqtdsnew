@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+}
+
+.execution-container__header{
+    display: flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+}
+
+.execution-container__header,.manage-container__add{
+    padding:10px 0;
+    align-self: flex-start;
+}
+.ant-table-wrapper{
+    margin-bottom: 30px;
+    width:100%;
+}
+
+/* .ant-pagination{
+    display: none !important;
+} */

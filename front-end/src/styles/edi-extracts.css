@@ -1,0 +1,136 @@
+.extracts{
+    padding:2em;
+    position: relative;
+}
+
+.extracts .extracts__extract{
+    background-color: #fff;
+    padding:1em;
+    
+}
+
+.extracts__extract .ant-empty{
+    margin:40px auto;
+    max-width: 450px;
+    word-wrap: break-word;
+    color:#a5a5a5;
+    
+}
+
+.extracts .btn-back{
+    position: absolute;
+    top:1em;
+    left:1em;
+    transition: all 0.5s ease-in-out;
+}
+
+.extracts .btn-back:hover{
+    border:1px solid #1890ff;
+}
+
+.extract__overrides{
+    margin-top:20px;
+    background-color: #f2f2f2;
+    padding:10px;
+    position:relative;
+    overflow: scroll;
+}
+
+.overrides__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overrides__form .btn_group{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.overrides__list{
+    display: flex;
+    list-style: none;
+    padding:5px;
+    align-items: flex-start;
+}
+
+.overrides__list .override span{
+    display: block;
+    margin-right:10px;
+}
+
+
+.overrides__list .override span:last-of-type{
+    margin-right:0px;
+}
+
+
+.overrides__list .override {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px;
+    padding:5px 10px;
+    border:1px solid #ebebeb;
+}
+
+.override:first-of-type{
+    margin-left:0px;
+}
+
+.btn_save_overrides{
+    
+    display:block;
+    margin:5px;
+    margin-left:auto;
+    
+}
+
+.member_provider_pick{
+    display: flex;
+    align-items: center;
+    margin:20px 0px 40px 0px;
+    padding:10px;
+    background-color: #f1f1f1;
+}
+
+.member_provider_pick .custom_field{
+    margin-right: 50px;
+    min-width:200px;
+    color:#444;
+}
+
+.custom_field label{
+    margin-right:10px;
+    text-transform: uppercase;
+    color:#666;
+}
+
+.custom_field select,.custom_field input{
+    border:none;
+    padding:5px;
+    background-color: #fff;
+}
+
+.custom_field select option{
+    padding:5px;
+    color:#888;
+}
+
+.member_provider_pick .tip{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 9pt;
+}
+
+.member_provider_pick .tip>span::before{
+    content: '*';
+    margin-right:5px;
+}
+
+.member_provider_pick .tip>span:first-of-type{
+    margin-right:35px;
+}

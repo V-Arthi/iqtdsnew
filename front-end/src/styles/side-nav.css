@@ -1,0 +1,8 @@
+.ant-menu-item.side_nav_item{
+    display: flex;
+    align-items: center;
+}
+
+.side_nav_item .anticon{
+    font-size: 20px;
+}

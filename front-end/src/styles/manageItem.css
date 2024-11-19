@@ -1,0 +1,103 @@
+.manage__Item{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.manage__Item__item{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.manage__Item__item input{
+    margin-right:15px;
+}
+.manage__Item__where{
+    width:100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.manage__Item__item input:last-of-type{
+    margin-right:0px;
+}
+
+.where__condition__group{
+    flex:0.5;
+    margin:5px auto;
+    padding:10px;
+    /* box-shadow: 0px 0px 5px lightgrey; */
+}
+
+.manage__Item__where__condition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:15px 0px;
+}
+
+.manage__Item__where__condition input{
+    margin-right:5px;
+}
+
+.manage__Item__where__condition select{
+    border:1px solid lightgrey;
+    padding:4px;
+    margin-right:5px;
+    font-size: 12px;
+}
+
+.manage__Item__where__condition select:first-of-type{
+    width:200px;
+}
+
+.manage__Item__where__condition select>option{
+    font-weight:normal;
+    color: #888;
+}
+
+.manage__Item__where__condition__provider__type{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.manage__Item__action{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    margin:30px 0px;
+}
+.ant-input-group-wrapper{
+    margin-right: 20px !important;
+}
+.ant-input-group-wrapper:last-of-type{
+    margin-right: 0px !important;
+}
+.ant-input-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ant-input-group-addon{
+    width:100%;
+    padding-left:0px !important;
+    text-align:left;
+    border:none;
+    margin:5px 0px;
+    color:#888 !important;
+}
+
+.ant-alert-message{
+    margin-left:5px;
+    margin-right:30px;
+}
+

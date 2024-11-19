@@ -1,0 +1,1048 @@
+<?xml version="1.0"?>
+<!-- 
+###################################################################### 
+# Copyright (c) # Arun Prakash <arunprakash.t@cognizant.com> 
+# All rights reserved. 
+# 
+# This software is licensed as described in the file LICENSE.txt, which 
+# you should have received as part of this distribution. 
+# ###################################################################### 
+	
+# $Id:827.5010.X286.xml 2019-01-23 17:23:00Z arunprakash $ -->
+
+<transaction xid="827">
+	<name>Financial Return 005010X286</name>
+	<loop xid="ISA_LOOP" type="explicit">
+		<name>Interchange Control Header</name>
+		<usage>R</usage>
+		<pos>001</pos>
+		<repeat>&gt;1</repeat>
+		<segment xid="ISA">
+			<name>Interchange Control Header</name>
+			<usage>R</usage>
+			<pos>010</pos>
+			<max_use>1</max_use>
+			<element xid="ISA01">
+				<data_ele>I01</data_ele>
+				<name>Authorization Information Qualifier</name>
+				<usage>R</usage>
+				<seq>01</seq>
+				<valid_codes>
+					<code>00</code>
+					<code>03</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA02">
+				<data_ele>I02</data_ele>
+				<name>Authorization Information</name>
+				<usage>R</usage>
+				<seq>02</seq>
+			</element>
+			<element xid="ISA03">
+				<data_ele>I03</data_ele>
+				<name>Security Information Qualifier</name>
+				<usage>R</usage>
+				<seq>03</seq>
+				<valid_codes>
+					<code>00</code>
+					<code>01</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA04">
+				<data_ele>I04</data_ele>
+				<name>Security Information</name>
+				<usage>R</usage>
+				<seq>04</seq>
+			</element>
+			<element xid="ISA05">
+				<data_ele>I05</data_ele>
+				<name>Interchange ID Qualifier</name>
+				<usage>R</usage>
+				<seq>05</seq>
+				<valid_codes>
+					<code>01</code>
+					<code>14</code>
+					<code>20</code>
+					<code>27</code>
+					<code>28</code>
+					<code>29</code>
+					<code>30</code>
+					<code>33</code>
+					<code>ZZ</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA06">
+				<data_ele>I06</data_ele>
+				<name>Interchange Sender ID</name>
+				<usage>R</usage>
+				<seq>06</seq>
+			</element>
+			<element xid="ISA07">
+				<data_ele>I05</data_ele>
+				<name>Interchange ID Qualifier</name>
+				<usage>R</usage>
+				<seq>07</seq>
+				<valid_codes>
+					<code>01</code>
+					<code>14</code>
+					<code>20</code>
+					<code>27</code>
+					<code>28</code>
+					<code>29</code>
+					<code>30</code>
+					<code>33</code>
+					<code>ZZ</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA08">
+				<data_ele>I07</data_ele>
+				<name>Interchange Receiver ID</name>
+				<usage>R</usage>
+				<seq>08</seq>
+			</element>
+			<element xid="ISA09">
+				<data_ele>I08</data_ele>
+				<name>Interchange Date</name>
+				<usage>R</usage>
+				<seq>09</seq>
+				<valid_codes>
+				</valid_codes>
+			</element>
+			<element xid="ISA10">
+				<data_ele>I09</data_ele>
+				<name>Interchange Time</name>
+				<usage>R</usage>
+				<seq>10</seq>
+				<valid_codes>
+				</valid_codes>
+			</element>
+			<element xid="ISA11">
+				<data_ele>I10</data_ele>
+				<name>Repetition Separator Character</name>
+				<usage>R</usage>
+				<seq>11</seq>
+			</element>
+			<element xid="ISA12">
+				<data_ele>I11</data_ele>
+				<name>Interchange Control Version Number</name>
+				<usage>R</usage>
+				<seq>12</seq>
+				<valid_codes>
+					<code>00501</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA13">
+				<data_ele>I12</data_ele>
+				<name>Interchange Control Number</name>
+				<usage>R</usage>
+				<seq>13</seq>
+			</element>
+			<element xid="ISA14">
+				<data_ele>I13</data_ele>
+				<name>Acknowledgment Requested</name>
+				<usage>R</usage>
+				<seq>14</seq>
+				<valid_codes>
+					<code>0</code>
+					<code>1</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA15">
+				<data_ele>I14</data_ele>
+				<name>Usage Indicator</name>
+				<usage>R</usage>
+				<seq>15</seq>
+				<valid_codes>
+					<code>P</code>
+					<code>T</code>
+				</valid_codes>
+			</element>
+			<element xid="ISA16">
+				<data_ele>I15</data_ele>
+				<name>Component Element Separator</name>
+				<usage>R</usage>
+				<seq>16</seq>
+			</element>
+		</segment>
+		<!--End of ISA segment -->
+		<loop xid="GS_LOOP" type="explicit">
+			<name>Functional Group Header</name>
+			<usage>R</usage>
+			<pos>002</pos>
+			<repeat>&gt;1</repeat>
+			<segment xid="GS">
+				<name>Functional Group Header</name>
+				<usage>R</usage>
+				<pos>010</pos>
+				<max_use>1</max_use>
+				<element xid="GS01">
+					<data_ele>479</data_ele>
+					<name>Functional Identifier Code</name>
+					<usage>R</usage>
+					<seq>01</seq>
+					<valid_codes>
+						<code>FR</code>
+					</valid_codes>
+				</element>
+				<element xid="GS02">
+					<data_ele>142</data_ele>
+					<name>Application Sender's Code</name>
+					<usage>R</usage>
+					<seq>02</seq>
+				</element>
+				<element xid="GS03">
+					<data_ele>124</data_ele>
+					<name>Application Receiver's Code</name>
+					<usage>R</usage>
+					<seq>03</seq>
+				</element>
+				<element xid="GS04">
+					<data_ele>373</data_ele>
+					<name>Date</name>
+					<usage>R</usage>
+					<seq>04</seq>
+					<valid_codes>
+					</valid_codes>
+				</element>
+				<element xid="GS05">
+					<data_ele>337</data_ele>
+					<name>Time</name>
+					<usage>R</usage>
+					<seq>05</seq>
+					<valid_codes>
+					</valid_codes>
+				</element>
+				<element xid="GS06">
+					<data_ele>28</data_ele>
+					<name>Group Control Number</name>
+					<usage>R</usage>
+					<seq>06</seq>
+				</element>
+				<element xid="GS07">
+					<data_ele>455</data_ele>
+					<name>Responsible Agency Code</name>
+					<usage>R</usage>
+					<seq>07</seq>
+					<valid_codes>
+						<code>X</code>
+					</valid_codes>
+				</element>
+				<element xid="GS08">
+					<data_ele>480</data_ele>
+					<name>Version / Release / Industry Identifier Code</name>
+					<usage>R</usage>
+					<seq>08</seq>
+					<valid_codes>
+						<code>005010</code>
+					</valid_codes>
+				</element>
+			</segment>
+			<!--End of GS segment -->
+			<loop xid="ST_LOOP" type="explicit">
+				<name>Transaction Set Header</name>
+				<usage>R</usage>
+				<pos>003</pos>
+				<repeat>&gt;1</repeat>
+				<segment xid="ST">
+					<name>Transaction Set Header</name>
+					<usage>R</usage>
+					<pos>0100</pos>
+					<max_use>1</max_use>
+					<element xid="ST01">
+						<data_ele>143</data_ele>
+						<name>Transaction Set Identifier Code</name>
+						<usage>R</usage>
+						<seq>01</seq>
+						<valid_codes>
+							<code>827</code>
+						</valid_codes>
+					</element>
+					<element xid="ST02">
+						<data_ele>329</data_ele>
+						<name>Transaction Set Control Number</name>
+						<usage>R</usage>
+						<seq>02</seq>
+					</element>
+					<element xid="ST03">
+						<data_ele>1705</data_ele>
+						<name>Implementation Convention Reference</name>
+						<usage>S</usage>
+						<seq>03</seq>
+					</element>
+				</segment>
+				<!--End of ST segment -->
+				<loop xid="HEADER" type="wrapper">
+					<name>Table 1 - Header</name>
+					<usage>R</usage>
+					<pos>0200</pos>
+					<repeat>1</repeat>
+					<segment xid="RIC">
+						<name>Financial Return</name>
+						<usage>R</usage>
+						<pos>0200</pos>
+						<max_use>1</max_use>
+						<element xid="RIC01">
+							<data_ele>591</data_ele>
+							<name>Payment Method Code</name>
+							<usage>R</usage>
+							<seq>001</seq>
+						</element>
+						<element xid="RIC02">
+							<data_ele>1270</data_ele>
+							<name>Code List Qualifier Code</name>
+							<usage>R</usage>
+							<seq>002</seq>
+						</element>
+						<element xid="RIC03">
+							<data_ele>1271</data_ele>
+							<name>Industry Code</name>
+							<usage>R</usage>
+							<seq>003</seq>
+						</element>
+						<element xid="RIC04">
+							<data_ele>782</data_ele>
+							<name>Monetary Amount</name>
+							<usage>R</usage>
+							<seq>004</seq>
+						</element>
+						<element xid="RIC05">
+							<data_ele>478</data_ele>
+							<name>Credit/Debit Flag Code</name>
+							<usage>R</usage>
+							<seq>005</seq>
+						</element>
+						<element xid="RIC06">
+							<data_ele>508</data_ele>
+							<name>Account Number</name>
+							<usage>S</usage>
+							<seq>006</seq>
+						</element>
+						<element xid="RIC07">
+							<data_ele>569</data_ele>
+							<name>Account Number Qualifier</name>
+							<usage>S</usage>
+							<seq>007</seq>
+						</element>
+						<element xid="RIC08">
+							<data_ele>506</data_ele>
+							<name>(DFI) ID Number Qualifier</name>
+							<usage>S</usage>
+							<seq>008</seq>
+						</element>
+						<element xid="RIC09">
+							<data_ele>507</data_ele>
+							<name>(DFI) Identification Number</name>
+							<usage>S</usage>
+							<seq>009</seq>
+						</element>
+						<element xid="RIC10">
+							<data_ele>508</data_ele>
+							<name>Account Number</name>
+							<usage>S</usage>
+							<seq>010</seq>
+						</element>
+						<element xid="RIC11">
+							<data_ele>569</data_ele>
+							<name>Account Number Qualifier</name>
+							<usage>S</usage>
+							<seq>011</seq>
+						</element>
+						<element xid="RIC12">
+							<data_ele>506</data_ele>
+							<name>(DFI) ID Number Qualifier</name>
+							<usage>S</usage>
+							<seq>012</seq>
+						</element>
+						<element xid="RIC13">
+							<data_ele>507</data_ele>
+							<name>(DFI) Identification Number</name>
+							<usage>S</usage>
+							<seq>013</seq>
+						</element>
+						<element xid="RIC14">
+							<data_ele>508</data_ele>
+							<name>Account Number</name>
+							<usage>S</usage>
+							<seq>014</seq>
+						</element>
+						<element xid="RIC15">
+							<data_ele>569</data_ele>
+							<name>Account Number Qualifier</name>
+							<usage>S</usage>
+							<seq>015</seq>
+						</element>
+						<element xid="RIC16">
+							<data_ele>506</data_ele>
+							<name>(DFI) ID Number Qualifier</name>
+							<usage>S</usage>
+							<seq>016</seq>
+						</element>
+						<element xid="RIC17">
+							<data_ele>507</data_ele>
+							<name>(DFI) Identification Number</name>
+							<usage>S</usage>
+							<seq>017</seq>
+						</element>
+						<element xid="RIC18">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>018</seq>
+						</element>
+					</segment>
+					<!--End of RIC segment -->
+					<segment xid="CUR">
+						<name>Currency</name>
+						<usage>S</usage>
+						<pos>0250</pos>
+						<max_use>1</max_use>
+						<element xid="CUR01">
+							<data_ele>98</data_ele>
+							<name>Entity Identifier Code</name>
+							<usage>R</usage>
+							<seq>001</seq>
+						</element>
+						<element xid="CUR02">
+							<data_ele>100</data_ele>
+							<name>Currency Code</name>
+							<usage>R</usage>
+							<seq>002</seq>
+						</element>
+						<element xid="CUR03">
+							<data_ele>280</data_ele>
+							<name>Exchange Rate</name>
+							<usage>S</usage>
+							<seq>003</seq>
+						</element>
+						<element xid="CUR04">
+							<data_ele>98</data_ele>
+							<name>Entity Identifier Code</name>
+							<usage>S</usage>
+							<seq>004</seq>
+						</element>
+						<element xid="CUR05">
+							<data_ele>100</data_ele>
+							<name>Currency Code</name>
+							<usage>S</usage>
+							<seq>005</seq>
+						</element>
+						<element xid="CUR06">
+							<data_ele>669</data_ele>
+							<name>Currency Market/Exchange Code</name>
+							<usage>S</usage>
+							<seq>006</seq>
+						</element>
+						<element xid="CUR07">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>S</usage>
+							<seq>007</seq>
+						</element>
+						<element xid="CUR08">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>008</seq>
+						</element>
+						<element xid="CUR09">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>009</seq>
+						</element>
+						<element xid="CUR10">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>S</usage>
+							<seq>010</seq>
+						</element>
+						<element xid="CUR11">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>011</seq>
+						</element>
+						<element xid="CUR12">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>012</seq>
+						</element>
+						<element xid="CUR13">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>S</usage>
+							<seq>013</seq>
+						</element>
+						<element xid="CUR14">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>014</seq>
+						</element>
+						<element xid="CUR15">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>015</seq>
+						</element>
+						<element xid="CUR16">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>S</usage>
+							<seq>016</seq>
+						</element>
+						<element xid="CUR17">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>017</seq>
+						</element>
+						<element xid="CUR18">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>018</seq>
+						</element>
+						<element xid="CUR19">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>S</usage>
+							<seq>019</seq>
+						</element>
+						<element xid="CUR20">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>020</seq>
+						</element>
+						<element xid="CUR21">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>021</seq>
+						</element>
+					</segment>
+					<!--End of CUR segment -->
+					<segment xid="TRN">
+						<name>Trace</name>
+						<usage>S</usage>
+						<pos>0300</pos>
+						<max_use>2</max_use>
+						<element xid="TRN01">
+							<data_ele>481</data_ele>
+							<name>Trace Type Code</name>
+							<usage>R</usage>
+							<seq>001</seq>
+						</element>
+						<element xid="TRN02">
+							<data_ele>127</data_ele>
+							<name>Reference Identification</name>
+							<usage>R</usage>
+							<seq>002</seq>
+						</element>
+						<element xid="TRN03">
+							<data_ele>509</data_ele>
+							<name>Originating Company Identifier</name>
+							<usage>S</usage>
+							<seq>003</seq>
+						</element>
+						<element xid="TRN04">
+							<data_ele>127</data_ele>
+							<name>Reference Identification</name>
+							<usage>S</usage>
+							<seq>004</seq>
+						</element>
+					</segment>
+					<!--End of TRN segment -->
+					<segment xid="REF">
+						<name>Reference Information</name>
+						<usage>S</usage>
+						<pos>0400</pos>
+						<max_use>&gt;1</max_use>
+						<element xid="REF01">
+							<data_ele>128</data_ele>
+							<name>Reference Identification Qualifier</name>
+							<usage>R</usage>
+							<seq>01</seq>
+						</element>
+						<element xid="REF02">
+							<data_ele>127</data_ele>
+							<name>Reference Identification</name>
+							<usage>S</usage>
+							<seq>02</seq>
+						</element>
+						<element xid="REF03">
+							<data_ele>352</data_ele>
+							<name>Description</name>
+							<usage>S</usage>
+							<seq>03</seq>
+						</element>
+						<composite xid="REF04">
+							<data_ele>C040</data_ele>
+							<name>Reference Identifier</name>
+							<usage>S</usage>
+							<seq>04</seq>
+							<element xid="REF04-01">
+								<data_ele>128</data_ele>
+								<name>Reference Identification Qualifier</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="REF04-02">
+								<data_ele>127</data_ele>
+								<name>Reference Identification</name>
+								<usage>R</usage>
+								<seq>02</seq>
+							</element>
+							<element xid="REF04-03">
+								<data_ele>128</data_ele>
+								<name>Reference Identification Qualifier</name>
+								<usage>S</usage>
+								<seq>03</seq>
+							</element>
+							<element xid="REF04-04">
+								<data_ele>127</data_ele>
+								<name>Reference Identification</name>
+								<usage>S</usage>
+								<seq>04</seq>
+							</element>
+							<element xid="REF04-05">
+								<data_ele>128</data_ele>
+								<name>Reference Identification Qualifier</name>
+								<usage>S</usage>
+								<seq>05</seq>
+							</element>
+							<element xid="REF04-06">
+								<data_ele>127</data_ele>
+								<name>Reference Identification</name>
+								<usage>S</usage>
+								<seq>06</seq>
+							</element>
+						</composite>
+					</segment>
+					<!--End of REF segment -->
+					<segment xid="DTM">
+						<name>Date/Time Reference</name>
+						<usage>S</usage>
+						<pos>0500</pos>
+						<max_use>&gt;1</max_use>
+						<element xid="DTM01">
+							<data_ele>374</data_ele>
+							<name>Date/Time Qualifier</name>
+							<usage>R</usage>
+							<seq>001</seq>
+						</element>
+						<element xid="DTM02">
+							<data_ele>373</data_ele>
+							<name>Date</name>
+							<usage>S</usage>
+							<seq>002</seq>
+						</element>
+						<element xid="DTM03">
+							<data_ele>337</data_ele>
+							<name>Time</name>
+							<usage>S</usage>
+							<seq>003</seq>
+						</element>
+						<element xid="DTM04">
+							<data_ele>623</data_ele>
+							<name>Time Code</name>
+							<usage>S</usage>
+							<seq>004</seq>
+						</element>
+						<element xid="DTM05">
+							<data_ele>1250</data_ele>
+							<name>Date Time Period Format Qualifier</name>
+							<usage>S</usage>
+							<seq>005</seq>
+						</element>
+						<element xid="DTM06">
+							<data_ele>1251</data_ele>
+							<name>Date Time Period</name>
+							<usage>S</usage>
+							<seq>006</seq>
+						</element>
+					</segment>
+					<!--End of DTM segment -->
+				</loop>
+				<!--End of HEADER loop -->
+				<loop xid="DETAIL" type="wrapper">
+					<name>Table 2 - Detail</name>
+					<usage>S</usage>
+					<pos>0600</pos>
+					<repeat>&gt;1</repeat>
+					<loop xid="NM1" type="explicit">
+						<name>Individual or Organizational Name</name>
+						<usage>S</usage>
+						<pos>0600</pos>
+						<repeat>10</repeat>
+						<segment xid="NM1">
+							<name>Individual or Organizational Name</name>
+							<usage>S</usage>
+							<pos>0600</pos>
+							<max_use>1</max_use>
+							<element xid="NM101">
+								<data_ele>98</data_ele>
+								<name>Entity Identifier Code</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="NM102">
+								<data_ele>1065</data_ele>
+								<name>Entity Type Qualifier</name>
+								<usage>R</usage>
+								<seq>02</seq>
+							</element>
+							<element xid="NM103">
+								<data_ele>1035</data_ele>
+								<name>Name Last or Organization Name</name>
+								<usage>S</usage>
+								<seq>03</seq>
+							</element>
+							<element xid="NM104">
+								<data_ele>1036</data_ele>
+								<name>Name First</name>
+								<usage>S</usage>
+								<seq>04</seq>
+							</element>
+							<element xid="NM105">
+								<data_ele>1037</data_ele>
+								<name>Name Middle</name>
+								<usage>S</usage>
+								<seq>05</seq>
+							</element>
+							<element xid="NM106">
+								<data_ele>1038</data_ele>
+								<name>Name Prefix</name>
+								<usage>S</usage>
+								<seq>06</seq>
+							</element>
+							<element xid="NM107">
+								<data_ele>1039</data_ele>
+								<name>Name Suffix</name>
+								<usage>S</usage>
+								<seq>07</seq>
+							</element>
+							<element xid="NM108">
+								<data_ele>66</data_ele>
+								<name>Identification Code Qualifier</name>
+								<usage>S</usage>
+								<seq>08</seq>
+							</element>
+							<element xid="NM109">
+								<data_ele>67</data_ele>
+								<name>Identification Code</name>
+								<usage>S</usage>
+								<seq>09</seq>
+							</element>
+							<element xid="NM110">
+								<data_ele>706</data_ele>
+								<name>Entity Relationship Code</name>
+								<usage>S</usage>
+								<seq>10</seq>
+							</element>
+							<element xid="NM111">
+								<data_ele>98</data_ele>
+								<name>Entity Identifier Code</name>
+								<usage>S</usage>
+								<seq>11</seq>
+							</element>
+							<element xid="NM112">
+								<data_ele>1035</data_ele>
+								<name>Name Last or Organization Name</name>
+								<usage>S</usage>
+								<seq>12</seq>
+							</element>
+						</segment>
+						<!--End of NM1 segment -->
+						<segment xid="N2">
+							<name>Additional Name Information</name>
+							<usage>S</usage>
+							<pos>0700</pos>
+							<max_use>2</max_use>
+							<element xid="N201">
+								<data_ele>93</data_ele>
+								<name>Name</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="N202">
+								<data_ele>93</data_ele>
+								<name>Name</name>
+								<usage>S</usage>
+								<seq>02</seq>
+							</element>
+						</segment>
+						<!--End of N2 segment -->
+						<segment xid="N3">
+							<name>Party Location</name>
+							<usage>S</usage>
+							<pos>0800</pos>
+							<max_use>2</max_use>
+							<element xid="N301">
+								<data_ele>166</data_ele>
+								<name>Address Information</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="N302">
+								<data_ele>166</data_ele>
+								<name>Address Information</name>
+								<usage>S</usage>
+								<seq>02</seq>
+							</element>
+						</segment>
+						<!--End of N3 segment -->
+						<segment xid="N4">
+							<name>Geographic Location</name>
+							<usage>S</usage>
+							<pos>0900</pos>
+							<max_use>1</max_use>
+							<element xid="N401">
+								<data_ele>19</data_ele>
+								<name>City Name</name>
+								<usage>S</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="N402">
+								<data_ele>156</data_ele>
+								<name>State or Province Code</name>
+								<usage>S</usage>
+								<seq>02</seq>
+							</element>
+							<element xid="N403">
+								<data_ele>116</data_ele>
+								<name>Postal Code</name>
+								<usage>S</usage>
+								<seq>03</seq>
+							</element>
+							<element xid="N404">
+								<data_ele>26</data_ele>
+								<name>Country Code</name>
+								<usage>S</usage>
+								<seq>04</seq>
+							</element>
+							<element xid="N405">
+								<data_ele>309</data_ele>
+								<name>Location Qualifier</name>
+								<usage>S</usage>
+								<seq>05</seq>
+							</element>
+							<element xid="N406">
+								<data_ele>310</data_ele>
+								<name>Location Identifier</name>
+								<usage>S</usage>
+								<seq>06</seq>
+							</element>
+							<element xid="N407">
+								<data_ele>1715</data_ele>
+								<name>Country Subdivision Code</name>
+								<usage>S</usage>
+								<seq>07</seq>
+							</element>
+						</segment>
+						<!--End of N4 segment -->
+						<segment xid="REF">
+							<name>Reference Information</name>
+							<usage>S</usage>
+							<pos>1000</pos>
+							<max_use>5</max_use>
+							<element xid="REF01">
+								<data_ele>128</data_ele>
+								<name>Reference Identification Qualifier</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="REF02">
+								<data_ele>127</data_ele>
+								<name>Reference Identification</name>
+								<usage>S</usage>
+								<seq>02</seq>
+							</element>
+							<element xid="REF03">
+								<data_ele>352</data_ele>
+								<name>Description</name>
+								<usage>S</usage>
+								<seq>03</seq>
+							</element>
+							<composite xid="REF04">
+								<data_ele>C040</data_ele>
+								<name>Reference Identifier</name>
+								<usage>S</usage>
+								<seq>04</seq>
+								<element xid="REF04-01">
+									<data_ele>128</data_ele>
+									<name>Reference Identification Qualifier</name>
+									<usage>R</usage>
+									<seq>01</seq>
+								</element>
+								<element xid="REF04-02">
+									<data_ele>127</data_ele>
+									<name>Reference Identification</name>
+									<usage>R</usage>
+									<seq>02</seq>
+								</element>
+								<element xid="REF04-03">
+									<data_ele>128</data_ele>
+									<name>Reference Identification Qualifier</name>
+									<usage>S</usage>
+									<seq>03</seq>
+								</element>
+								<element xid="REF04-04">
+									<data_ele>127</data_ele>
+									<name>Reference Identification</name>
+									<usage>S</usage>
+									<seq>04</seq>
+								</element>
+								<element xid="REF04-05">
+									<data_ele>128</data_ele>
+									<name>Reference Identification Qualifier</name>
+									<usage>S</usage>
+									<seq>05</seq>
+								</element>
+								<element xid="REF04-06">
+									<data_ele>127</data_ele>
+									<name>Reference Identification</name>
+									<usage>S</usage>
+									<seq>06</seq>
+								</element>
+							</composite>
+						</segment>
+						<!--End of REF segment -->
+						<segment xid="PER">
+							<name>Administrative Communications Contact</name>
+							<usage>S</usage>
+							<pos>1100</pos>
+							<max_use>3</max_use>
+							<element xid="PER01">
+								<data_ele>366</data_ele>
+								<name>Contact Function Code</name>
+								<usage>R</usage>
+								<seq>01</seq>
+							</element>
+							<element xid="PER02">
+								<data_ele>93</data_ele>
+								<name>Name</name>
+								<usage>S</usage>
+								<seq>02</seq>
+							</element>
+							<element xid="PER03">
+								<data_ele>365</data_ele>
+								<name>Communication Number Qualifier</name>
+								<usage>S</usage>
+								<seq>03</seq>
+							</element>
+							<element xid="PER04">
+								<data_ele>364</data_ele>
+								<name>Communication Number</name>
+								<usage>S</usage>
+								<seq>04</seq>
+							</element>
+							<element xid="PER05">
+								<data_ele>365</data_ele>
+								<name>Communication Number Qualifier</name>
+								<usage>S</usage>
+								<seq>05</seq>
+							</element>
+							<element xid="PER06">
+								<data_ele>364</data_ele>
+								<name>Communication Number</name>
+								<usage>S</usage>
+								<seq>06</seq>
+							</element>
+							<element xid="PER07">
+								<data_ele>365</data_ele>
+								<name>Communication Number Qualifier</name>
+								<usage>S</usage>
+								<seq>07</seq>
+							</element>
+							<element xid="PER08">
+								<data_ele>364</data_ele>
+								<name>Communication Number</name>
+								<usage>S</usage>
+								<seq>08</seq>
+							</element>
+							<element xid="PER09">
+								<data_ele>443</data_ele>
+								<name>Contact Inquiry Reference</name>
+								<usage>S</usage>
+								<seq>09</seq>
+							</element>
+						</segment>
+						<!--End of PER segment -->
+					</loop>
+					<!--End of NM1 loop -->
+				</loop>
+				<!--End of DETAIL loop -->
+				<loop xid="FOOTER" type="wrapper">
+					<name>Table 3 - Footer</name>
+					<usage>N</usage>
+					<pos>030</pos>
+					<repeat>1</repeat>
+				</loop>
+				<!--End of FOOTER loop -->
+				<segment xid="SE">
+					<name>Transaction Set Trailer</name>
+					<usage>R</usage>
+					<pos>1200</pos>
+					<max_use>1</max_use>
+					<element xid="SE01">
+						<data_ele>96</data_ele>
+						<name>Transaction Segment Count</name>
+						<usage>R</usage>
+						<seq>01</seq>
+					</element>
+					<element xid="SE02">
+						<data_ele>329</data_ele>
+						<name>Transaction Set Control Number</name>
+						<usage>R</usage>
+						<seq>02</seq>
+					</element>
+				</segment>
+				<!--End of SE segment -->
+			</loop>
+			<!--End of ST loop -->
+			<segment xid="GE">
+				<name>Functional Group Trailer</name>
+				<usage>R</usage>
+				<pos>030</pos>
+				<max_use>1</max_use>
+				<element xid="GE01">
+					<data_ele>97</data_ele>
+					<name>Number of Transaction Sets Included</name>
+					<usage>R</usage>
+					<seq>01</seq>
+				</element>
+				<element xid="GE02">
+					<data_ele>28</data_ele>
+					<name>Group Control Number</name>
+					<usage>R</usage>
+					<seq>02</seq>
+				</element>
+			</segment>
+			<!--End of GE segment -->
+		</loop>
+		<!--End of GS loop -->
+		<segment xid="IEA">
+			<name>Interchange Control Trailer</name>
+			<usage>R</usage>
+			<pos>030</pos>
+			<max_use>1</max_use>
+			<element xid="IEA01">
+				<data_ele>I16</data_ele>
+				<name>Number of Included Functional Groups</name>
+				<usage>R</usage>
+				<seq>01</seq>
+			</element>
+			<element xid="IEA02">
+				<data_ele>I12</data_ele>
+				<name>Interchange Control Number</name>
+				<usage>R</usage>
+				<seq>02</seq>
+			</element>
+		</segment>
+		<!--End of IEA segment -->
+	</loop>
+	<!--End of ISA loop -->
+</transaction>

@@ -1,0 +1,19 @@
+.file-upload{
+    display: flex;
+    text-align: center;
+    line-height: 100% !important;
+}
+.file-upload-input{
+    margin-left: 15px;
+    
+}
+.bulk-load-header{
+    background-color: #fff;
+    padding:1em;
+    display: flex;
+    align-items: center;
+    
+}
+.bulk-load-layout{
+    padding:30px;
+}

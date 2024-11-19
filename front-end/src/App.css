@@ -1,0 +1,62 @@
+.App{
+    display: flex;
+    flex-flow:column nowrap;
+    position: relative;
+    padding: 0px;
+    margin:0px;
+}
+
+.particles canvas{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.main_content{
+    min-height:calc(100vh - 50px);
+    padding:0 1em;
+}
+
+/* .ant-table-thead .ant-table-cell{
+    background-color:#f7f6f2 !important;
+} */
+
+.ant-table-footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color:#f4f4f4;
+    background: #22223b;
+}
+
+.top-nav{
+    padding : 0px !important;
+    background: #001529 linear-gradient(to right,#001529,#0033a1,#001529) !important;
+    height:50px !important;
+    line-height: 50px !important;
+    
+}
+
+.main_content{
+    padding:0px !important;
+}
+
+.record_limit_inp{
+    -moz-appearance: textfield;
+    width:50px;
+}
+
+.record_limit_inp::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+

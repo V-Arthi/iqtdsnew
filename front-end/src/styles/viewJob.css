@@ -1,0 +1,192 @@
+/* aside{
+    width:100px !important;
+    max-width:100px !important;
+    min-width:100px !important;
+} 
+.ant-anchor-ink{
+    display:none !important;
+}
+
+.ant-anchor-wrapper,.ant-anchor{
+    background-color: transparent;
+    padding:0;
+    margin:0;
+}
+.ant-anchor-wrapper{
+    margin-top:50px;
+}
+
+.ant-anchor-link{
+    width: 100%;
+    padding:0px;
+    margin:0px;
+}
+
+.ant-anchor-link-title{
+    width:100%;
+    
+    padding:10px;
+    border-right:5px solid transparent;
+}
+
+.ant-anchor-link-title-active{
+    border-color: crimson;
+}
+*/
+.job__container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: flex-start;
+    padding:20px;
+    position: relative;
+}
+
+.job__header{
+    min-height:100px;
+    background: #f2f2f2;
+    width: 100%;
+    padding:20px;
+    box-shadow: 5px 5px 10px #4446;
+    margin-bottom:20px;
+    margin-top:20px;
+
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height:auto !important;
+}
+
+.header-section .field{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-left:20px;
+}
+
+.header-section .field:first-of-type{
+    margin-left: 0px;
+}
+
+.header-section .field label{
+    font-size: 10px;
+    line-height: 18px;
+    color:#888;
+    margin:0;
+    display: block;
+    width:100%;
+}
+
+.header-section .field span{
+    margin: 0px;
+    height:30px;
+    line-height: 30px;
+    display: block;
+    width:100%;
+}
+
+
+.run__header{
+    background-color: #fff;
+    padding: 0;
+}
+
+.run__container{
+    margin:10px 0px;
+    width:100%;
+}
+
+.run__container__run{
+    min-height:600px;
+    padding:20px 10px;
+    background: #fff;
+    margin:20px 0px;
+    
+}
+
+
+.run__container__divider{
+    margin:10px;
+}
+.run_result_table table{
+    font-size: 12px !important;
+}
+
+.run_action{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.result_table_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.run_action .ant-btn{
+    margin-right: 10px;
+}
+
+.run_action .ant-btn:last-of-type{
+    margin-right:0px
+}
+.run__overrides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+      
+}
+.run_override_body{
+    margin:10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.run_override_body>select{
+    padding:5px;
+    border:2px solid #f7f7f7;
+    outline: none;
+    border-radius: 5px;
+}
+
+.run_override_body>select>option{
+    padding:3px;
+    color:#999 !important;
+    border:none !important;
+}
+
+.run_override_body>*{
+    margin-right:10px;
+}
+
+.run_override_body > .ant-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+
+.btn-save-override{
+    align-self: flex-start;
+}
+
+.logs_box .ant-collapse-content-box{
+    background-color: #000;
+}
+
+.job__container .btn-back{
+    position: absolute;
+    top:5px;
+    left:5px;
+    margin-bottom: 5px;
+}

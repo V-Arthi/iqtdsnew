@@ -1,0 +1,23 @@
+.user-menu{
+    border-left:1px solid #888;
+}
+
+.user-button{
+    color:#fff;
+    text-transform: capitalize;
+}
+.user-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-name{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.user-role{
+    color:#666;
+    font-style: italic;
+}

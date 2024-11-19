@@ -1,0 +1,48 @@
+.validation-header {
+  display: flex;
+  align-items: center;
+}
+.validation-header .field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+}
+
+.validation-header .field label {
+  font-size: 0.75rem;
+  color: #727272;
+}
+
+.claim-validation-container {
+  padding: 2em 4em;
+  background-color: #fff;
+}
+
+.claim-validation-request-form-container {
+  display: flex;
+}
+
+.claim-validation-request-form-container form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.claim-validation-request-form-container form fieldset {
+  display: flex;
+  margin-right: 30px;
+}
+
+.claim-validation-request-form-container form label {
+  margin-right: 10px;
+}
+
+.claim-validation-request-form-container .submit-btn {
+  margin-right: 10px;
+}
+
+.claim-validation-request-form-container form fieldset select,
+.claim-validation-request-form-container form fieldset textarea {
+  outline: none;
+  border: 1px solid #999999;
+  padding: 5px;
+}

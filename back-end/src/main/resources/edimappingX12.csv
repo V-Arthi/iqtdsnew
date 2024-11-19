@@ -1,0 +1,49 @@
+field_name,claim_type,loop_id,loop_repeat,segment,segment_repeat,element,sub_element,is_strict,is_value_mockup_eligible
+Bill Class,Institutional,2300,1,CLM,1,CLM05,1,0,1
+Claim ACD Indicator 1,Professional,2300,1,CLM,1,CLM11,1,1,1
+Claim ACD Indicator 1,Dental,2300,1,CLM,1,CLM11,1,1,1
+Claim ACD Indicator 2,Professional,2300,1,CLM,1,CLM11,2,1,1
+Claim ACD Indicator 2,Dental,2300,1,CLM,1,CLM11,2,1,1
+Claim COB Allowed Value,Claim,2430,1,SVD,1,SVD02,null,1,1
+Claim COB Reason Code,Claim,2320,1,OI,1,OI02,null,1,1
+Claim COB Value 1,Claim,2320,1,SBR,1,SBR01,null,1,1
+Claim COB Value 2,Claim,2320,1,SBR,1,SBR09,null,1,1
+Claim Line Units,Professional,2400,1,SV,1,SV104,null,0,1
+Claim Paid Amount,Professional,2400,1,SV,1,SV102,null,1,1
+Claim Sub Type,Claim,GS_LOOP,1,GS,1,GS08,null,1,1
+Claim Total Payable,Claim,2300,1,CLM,1,CLM02,null,1,1
+Claim Type,Claim,GS_LOOP,1,GS,1,GS08,null,1,1
+Date Of Service 1,Claim,2400,1,DTP,1,DTP03,null,1,1
+Date Of Service 2,Institutional ,2300,1,DTP,2,DTP03,null,1,1
+Date Of Service 3,Institutional ,2300,1,DTP,3,DTP03,null,1,1
+Facility Type,Claim,2300,1,CLM,1,CLM05,3,1,1
+Member AddrLine1,Claim,2010BA,1,N3,1,N301,null,1,0
+Member AddrLine2,Claim,2010BA,1,N3,1,N302,null,1,0
+Member City,Claim,2010BA,1,N4,1,N401,null,1,0
+Member DateOfBirth,Claim,2010BA,1,DMG,1,DMG02,null,1,0
+Member FirstName,Claim,2010BA,1,NM,1,NM104,null,1,0
+Member Gender,Claim,2010BA,1,DMG,1,DMG03,null,1,0
+Member ID,Claim,2010BA,1,NM,1,NM109,null,1,0
+Member LastName,Claim,2010BA,1,NM,1,NM103,null,1,0
+Member MiddleInitial,Claim,2010BA,1,NM,1,NM105,null,1,0
+Member State,Claim,2010BA,1,N4,1,N402,null,1,0
+Member Zip,Claim,2010BA,1,N4,1,N403,null,1,0
+Patient Account Number,Claim,2300,1,CLM,1,CLM01,null,1,1
+Place Of Service,Professional,2300,1,CLM,1,CLM05,1,1,1
+Place Of Service,Dental,2300,1,CLM,1,CLM05,1,1,1
+Procedure Code,Professional,2400,1,SV1,1,SV101,2,1,1
+Procedure Code,Institutional ,2400,1,SV2,1,SV202,2,1,1
+Procedure Code,Dental,2400,1,SV3,1,SV301,2,1,1
+Provider AddrLine1,Claim,2010AA,1,N3,1,N301,null,1,0
+Provider AddrLine2,Claim,2010AA,1,N3,1,N302,null,1,0
+Provider City,Claim,2010AA,1,N4,1,N401,null,1,0
+Provider FirstName,Claim,2010AA,1,NM,1,NM104,null,1,0
+Provider LastName,Claim,2010AA,1,NM,1,NM103,null,1,0
+Provider MiddleInitial,Claim,2010AA,1,NM,1,NM105,null,1,0
+Provider NPI,Claim,2010AA,1,NM,1,NM109,null,1,0
+Provider State,Claim,2010AA,1,N4,1,N402,null,1,0
+Provider Tax ID,Claim,2010AA,1,REF,1,REF02,null,1,0
+Provider Zip,Claim,2010AA,1,N4,1,N403,null,1,0
+Received Date,Claim,HEADER,1,BHT,1,BHT04,null,1,1
+Trading Partner Value 1,Claim,ISA_LOOP,1,ISA,1,ISA06,null,0,1
+Trading Partner Value 2,Claim,ISA_LOOP,1,ISA,1,ISA08,null,0,1
